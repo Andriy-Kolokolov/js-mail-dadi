@@ -8,16 +8,41 @@
 	<title>Title</title>
 
 	<link rel="stylesheet" href="style.css">
-	<script src="script.js" defer></script>
+	<script src="gameScript.js" defer></script>
 
 </head>
 <body class="d-flex justify-content-center align-items-center" style="background-color: #111316;
 			height: 100vh;
 			width: 100vw;">
 
-	<div class="ms_login_window bg-secondary p-4 rounded-3">
-		<div>
-			game
+	<div class="container ms_login_window bg-secondary p-4 rounded-3">
+		<div class="row text-center">
+			<!--    player row    -->
+			<div class="col-4">
+				<h1>PLAYER:</h1>
+			</div>
+			<div class="col-4">
+				<h1 id="points-player">---</h1>
+			</div>
+			<div class="col-4">
+				<h1 id="result-player">---</h1>
+			</div>
+			<!--    pc row    -->
+			<div class="col-4">
+				<h1>PC:</h1>
+			</div>
+			<div class="col-4">
+				<h1 id="points-pc">---</h1>
+			</div>
+			<div class="col-4">
+				<h1 id="result-pc">---</h1>
+			</div>
+
+			<div class="mt-5 col-12">
+				<button class="p-3 fs-2 btn btn-primary" id="btn-roll-dice">
+					ROLL
+				</button>
+			</div>
 		</div>
 	</div>
 

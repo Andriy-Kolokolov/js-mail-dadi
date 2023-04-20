@@ -1,5 +1,4 @@
-
-const registeredEmailsList = [
+let registeredEmailsList = [
     "exampleemail0@gmail.com",
     "exampleemail1@gmail.it",
     "exampleemail2@gmail.de",

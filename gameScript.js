@@ -8,8 +8,8 @@ let action = 1;  // button state
 
 btnRollDice.addEventListener("click", function () {
     if (action === 1) {
-        let dicePlayer = getRandInt(7);
-        let dicePc = getRandInt(7);
+        let dicePlayer = getRandInt(6);
+        let dicePc = getRandInt(6);
 
         fieldPointsPlayer.innerText = dicePlayer.toString();
         fieldPointsPc.innerText = dicePc.toString();
@@ -29,7 +29,7 @@ btnRollDice.addEventListener("click", function () {
 });
 
 function getRandInt(maxNum) {
-    return Math.floor(Math.random() * maxNum);
+    return 1 + Math.floor(Math.random() * maxNum);
 }
 
 function setWinner(numPlayer, numPc) {
